@@ -66,9 +66,10 @@ color:#cbd5e1;
 }
 
 #calendar{
-display:grid;
-grid-template-columns:repeat(7,1fr);
-gap:10px;
+display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  width: 100%;
 }
 
 .empty{
@@ -86,6 +87,9 @@ min-height:72px;
 display:flex;
 flex-direction:column;
 justify-content:center;
+min-width: 0;
+width: 100%;
+box-sizing: border-box;
 }
 
 .day:hover{
@@ -113,26 +117,22 @@ color:#052e16;
 color:#064e3b;
 }
 
-@media(max-width:600px){
+@media (max-width: 600px){
 
-.container{
-padding:18px;
-}
+  .app{
+    width: 95%;
+    padding: 15px;
+  }
 
-h1{
-font-size:22px;
-}
+  .day{
+    font-size: 12px;
+    padding: 8px 2px;
+  }
 
-.day{
-min-height:65px;
-}
-
-.number{
-font-size:16px;
-}
-
-.count{
-font-size:10px;
-}
+  .count{
+    font-size: 10px;
+  }
 
 }
+
+
